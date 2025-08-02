@@ -23,6 +23,9 @@ if(protobuf_DEPRECATED_CMAKE_SUBDIRECTORY_USAGE)
   get_filename_component(protobuf_SOURCE_DIR ${protobuf_SOURCE_DIR} DIRECTORY)
 endif()
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install_dir)
+
 # Options
 option(protobuf_INSTALL "Install protobuf binaries and files" ON)
 option(protobuf_BUILD_TESTS "Build tests" ON)

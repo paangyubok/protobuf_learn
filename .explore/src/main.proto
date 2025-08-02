@@ -1,0 +1,10 @@
+syntax = "proto3";
+package explore;
+
+message EmptyMessage {}
+
+message Test {
+  int32 i32 = 1;
+  int64 i64 = 2;
+  string str = 3;
+}
